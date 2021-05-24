@@ -11,6 +11,7 @@ class Friend(models.Model):
     # sender = models.CharField(max_length=20, default='requested')
     status = models.CharField(max_length=20, default='requested')
     created_at = models.DateTimeField(default=now)
+    seen = models.BooleanField(default=False)
 
 
 class CustomNotification(models.Model):
